@@ -1,6 +1,93 @@
 @import "~bootstrap/scss/bootstrap";
-$body-color: blue;
+$body-color: #00669D;
+
+ // Google font
+ @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+ $roboto: 'Roboto', sans-serif;
+
+@font-face {
+  font-family: Roboto;
+  src: url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+}
 
 body {
   color: $body-color;
+  font-size: 15px;
+  font-family: $roboto;
+}
+
+body {
+ background-image: url("../images/img_bg_moodboard_simple.jpg");
+ background-repeat: no-repeat;
+ background-size:cover;
+}
+
+.cards {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 12px;
+  width:350px;
+}
+
+.item {
+  position: relative;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  opacity: 0.7;
+}
+
+
+.img-selected {
+  opacity: 1;
+}
+
+
+
+.explanation {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  align-items: center;
+  font-weight: light;
+
+}
+
+.explanation p {
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.next {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #FF871C;
+  border: none;
+  opacity: 0.8;
+}
+
+.next:hover {
+  background-color: #FF871C;
+  opacity: 1;
+}
+
+.avatar {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 5px;
 }
